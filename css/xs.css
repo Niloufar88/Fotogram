@@ -18,7 +18,8 @@ main h1 {
 }
 
 .img-container {
-    grid-template-columns: repeat(2, minmax(120px, 240px));
+    grid-template-columns: repeat(2, minmax(110px, 240px));
+    gap: 10px;
 }
 
 footer {
@@ -61,7 +62,7 @@ footer .profile .profile-img {
 
 .overlay .img-circle img {
     width: 80%;
-    height: 50%;
+    height: 45%;
 }
 
 #overlay-img #img-text {
