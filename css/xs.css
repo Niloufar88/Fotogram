@@ -17,6 +17,10 @@ main h1 {
     font-size: 22px;
 }
 
+.img-container {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 360px));
+}
+
 footer {
     padding: 20px 40px;
     height: 120px;
@@ -46,18 +50,18 @@ footer .profile .profile-img {
 }
 
 .overlay .img-circle {
-    width: 280px;
-    height: 460px;
+    width: 260px;
+    height: 80%vh;
 }
 
 #overlay-img {
-    width: 280px;
-    height: 460px;
+    width: 260px;
+    height: 80%vh;
 }
 
 .overlay .img-circle img {
-    width: 85%;
-    height: 60%;
+    width: 80%;
+    height: 50%;
 }
 
 #overlay-img #img-text {
@@ -79,13 +83,13 @@ footer .profile .profile-img {
 }
 
 #next-btn {
-    width: 25px;
-    height: 25px;
+    width: 28px;
+    height: 28px;
 }
 
 #prev-btn {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
 }
 
 #overlay-img #prev {
@@ -99,6 +103,6 @@ footer .profile .profile-img {
 }
 
 #close {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
 }

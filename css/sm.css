@@ -28,12 +28,12 @@ main h1 {
 }
 
 #overlay-img #img-counter {
-    bottom: 15px;
+    bottom: 18px;
     font-size: 16px;
 }
 
 #overlay-img #next {
-    bottom: 12px;
+    bottom: 18px;
     right: 70px;
 }
 
@@ -48,7 +48,7 @@ main h1 {
 }
 
 #overlay-img #prev {
-    bottom: 12px;
+    bottom: 18px;
     left: 70px;
 }
 
