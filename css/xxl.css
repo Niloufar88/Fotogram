@@ -48,7 +48,6 @@ main h1 {
 
 .img-container {
     display: grid;
-    /* grid-template-rows: repeat(4, 1fr); */
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     place-content: center;
     gap: 30px;
@@ -125,7 +124,8 @@ footer .profile .profile-img img {
 
 .overlay {
     /* display: none; */
-    width: 80%;
+    /* width: 80%; */
+    width: calc(100% - 320px);
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.6);
     position: fixed;

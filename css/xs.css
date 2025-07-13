@@ -31,6 +31,10 @@ footer .profile .profile-img {
     height: 42px;
 }
 
+.overlay {
+    width: calc(100% - 80px);
+}
+
 #caption {
     text-align: center;
     font-size: 12px;
@@ -42,35 +46,35 @@ footer .profile .profile-img {
 }
 
 .overlay .img-circle {
-    width: 280px;
-    height: 280px;
+    width: 260px;
+    height: 420px;
 }
 
 #overlay-img {
-    width: 280px;
-    height: 350px;
+    width: 260px;
+    height: 420px;
 }
 
 .overlay .img-circle img {
     width: 75%;
-    height: 80%;
+    height: 60%;
 }
 
 #overlay-img #img-text {
-    top: 15px;
+    top: 30px;
     left: 50px;
     font-size: 14px;
     font-weight: 500;
 }
 
 #overlay-img #img-counter {
-    bottom: 10px;
+    bottom: 20px;
     font-size: 12px;
     font-weight: 500;
 }
 
 #overlay-img #next {
-    bottom: 8px;
+    bottom: 18px;
     right: 50px;
 }
 
@@ -85,12 +89,12 @@ footer .profile .profile-img {
 }
 
 #overlay-img #prev {
-    bottom: 8px;
+    bottom: 18px;
     left: 50px;
 }
 
 #overlay-img #close-btn {
-    top: 15px;
+    top: 22px;
     right: 20px;
 }
 

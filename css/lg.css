@@ -19,6 +19,10 @@ footer {
     padding: 15px 120px;
 }
 
+.overlay {
+    width: calc(100% - 240px);
+}
+
 .overlay .img-circle {
     width: 500px;
     height: 500px;
