@@ -8,8 +8,8 @@ main h1 {
 }
 
 .overlay .img-circle {
-    width: 430px;
-    height: 500px;
+    width: 450px;
+    height: 600px;
 }
 
 .overlay .img-circle img {
@@ -18,8 +18,8 @@ main h1 {
 }
 
 #overlay-img {
-    width: 430px;
-    height: 500px;
+    width: 450px;
+    height: 600px;
 }
 
 #overlay-img #img-text {

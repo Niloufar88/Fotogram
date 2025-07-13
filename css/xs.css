@@ -18,7 +18,7 @@ main h1 {
 }
 
 .img-container {
-    grid-template-columns: repeat(auto-fit, minmax(240px, 360px));
+    grid-template-columns: repeat(2, minmax(120px, 240px));
 }
 
 footer {
@@ -50,12 +50,12 @@ footer .profile .profile-img {
 }
 
 .overlay .img-circle {
-    width: 260px;
+    width: 270px;
     height: 80%vh;
 }
 
 #overlay-img {
-    width: 260px;
+    width: 270px;
     height: 80%vh;
 }
 
