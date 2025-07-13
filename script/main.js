@@ -18,6 +18,7 @@ const imageNumber = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 
 replaceImg.forEach((image, i) => {
 
     image.addEventListener('click', function(e) {
+
         e.stopPropagation();
         document.getElementById('overlay').classList.toggle('d-none');
         mainImg.src = this.getAttribute("src"),
@@ -40,12 +41,17 @@ replaceImg.forEach((image, i) => {
 // prev-Button-function:
 
 prevButton.addEventListener('click', function(e) {
+
     e.stopPropagation();
+
     counter--;
     if (counter < 0) counter = replaceImg.length - 1;
+
     mainImg.src = replaceImg[counter].getAttribute("src");
     document.getElementById('img-counter').innerHTML = `<ul>${counter+1} / ${replaceImg.length}</ul>`;
+
     for (let i = 0; i < imageTitle.length; i++) {
+
         document.getElementById('img-text').innerHTML = `<ul> ${imageTitle[counter]} </ul>`;
 
     }
@@ -54,12 +60,16 @@ prevButton.addEventListener('click', function(e) {
 // next-button-function:
 
 nextButton.addEventListener('click', function(e) {
+
     e.stopPropagation();
     counter++;
     if (counter >= replaceImg.length) counter = 0;
+
     mainImg.src = replaceImg[counter].getAttribute("src");
     document.getElementById('img-counter').innerHTML = `<ul>${counter+1} / ${replaceImg.length}</ul>`;
+
     for (let i = 0; i < imageTitle.length; i++) {
+
         document.getElementById('img-text').innerHTML = `<ul> ${imageTitle[counter]} </ul>`;
 
     }
@@ -68,12 +78,16 @@ nextButton.addEventListener('click', function(e) {
 //overlay-functions:
 
 function hideOverlay(elementId) {
+
     document.getElementById('overlay').classList.add("d-none");
     counter = 0;
     stopPropagationFurthur(elementId);
+
 }
 
+
 function stopPropagationFurthur(elementId) {
+
     document.getElementById(elementId).addEventListener("click", (event) => {
         event.stopPropagation();
 
