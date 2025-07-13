@@ -9,12 +9,17 @@ main h1 {
 
 .overlay .img-circle {
     width: 430px;
-    height: 430px;
+    height: 500px;
+}
+
+.overlay .img-circle img {
+    width: 85%;
+    height: 65%;
 }
 
 #overlay-img {
     width: 430px;
-    height: 430px;
+    height: 500px;
 }
 
 #overlay-img #img-text {

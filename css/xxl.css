@@ -123,8 +123,6 @@ footer .profile .profile-img img {
 }
 
 .overlay {
-    /* display: none; */
-    /* width: 80%; */
     width: calc(100% - 320px);
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.6);
@@ -137,7 +135,7 @@ footer .profile .profile-img img {
 
 .overlay .img-circle {
     width: 600px;
-    height: 600px;
+    height: 630px;
     background-color: var(--background-color-blue-dark);
     position: absolute;
     top: 50%;
@@ -153,7 +151,7 @@ footer .profile .profile-img img {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 600px;
-    height: 600px;
+    height: 630px;
     background-color: var(--background-color-blue-dark);
     border: 1px solid transparent;
     border-radius: 30px;
@@ -217,8 +215,8 @@ footer .profile .profile-img img {
 }
 
 .overlay .img-circle img {
-    width: 70%;
-    height: 70%;
+    width: 72%;
+    height: 72%;
     object-fit: cover;
     border: 1px solid transparent;
     border-radius: 30px;

@@ -23,14 +23,19 @@ footer {
     width: calc(100% - 240px);
 }
 
+.overlay .img-circle img {
+    width: 85%;
+    height: 70%;
+}
+
 .overlay .img-circle {
-    width: 500px;
-    height: 500px;
+    width: 560px;
+    height: 620px;
 }
 
 #overlay-img {
-    width: 500px;
-    height: 500px;
+    width: 560px;
+    height: 620px;
 }
 
 #overlay-img #img-text {
