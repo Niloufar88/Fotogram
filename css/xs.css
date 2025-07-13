@@ -48,7 +48,12 @@ footer .profile .profile-img {
 
 #overlay-img {
     width: 280px;
-    height: 280px;
+    height: 350px;
+}
+
+.overlay .img-circle img {
+    width: 75%;
+    height: 80%;
 }
 
 #overlay-img #img-text {
