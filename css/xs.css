@@ -1,0 +1,95 @@
+#header {
+    padding: 10px 40px;
+    height: 100px;
+}
+
+#header .logo {
+    width: 150px;
+    height: auto;
+}
+
+main {
+    padding: 60px 40px 220px;
+    gap: 40px;
+}
+
+main h1 {
+    font-size: 22px;
+}
+
+footer {
+    padding: 20px 40px;
+    height: 120px;
+}
+
+footer .profile {
+    gap: 10px;
+}
+
+footer .profile .profile-img {
+    width: 42px;
+    height: 42px;
+}
+
+#caption {
+    text-align: center;
+    font-size: 12px;
+}
+
+#copyright {
+    font-size: 12px;
+    text-align: center;
+}
+
+.overlay .img-circle {
+    width: 280px;
+    height: 280px;
+}
+
+#overlay-img {
+    width: 280px;
+    height: 280px;
+}
+
+#overlay-img #img-text {
+    top: 15px;
+    left: 50px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#overlay-img #img-counter {
+    bottom: 10px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+#overlay-img #next {
+    bottom: 8px;
+    right: 50px;
+}
+
+#next-btn {
+    width: 22px;
+    height: 22px;
+}
+
+#prev-btn {
+    width: 22px;
+    height: 22px;
+}
+
+#overlay-img #prev {
+    bottom: 8px;
+    left: 50px;
+}
+
+#overlay-img #close-btn {
+    top: 15px;
+    right: 20px;
+}
+
+#close {
+    width: 25px;
+    height: 25px;
+}

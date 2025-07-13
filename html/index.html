@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fotogram</title>
+
+    <!-- Favicon -->
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../img/favicon_io (4)/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../img/favicon_io (4)/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../img/favicon_io (4)/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../img/favicon_io (4)/site.webmanifest" />
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="../css/main.css" />
+
+    <style>
+      .d-none {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="parent">
+      <header id="header" onclick="hideOverlay('header')">
+        <div class="logo">
+          <img src="../img/Fotogram_Logo.svg" alt="Logo" />
+        </div>
+      </header>
+      <main id="main" onclick="hideOverlay('main')">
+        <h1>Photos are the gateway of memories to our souls</h1>
+
+        <figure class="img-container" id="img-container">
+          <img src="../img/Budapest.jpg" alt="Budapest" />
+          <img src="../img/Deutschland.JPG" alt="Germany" />
+          <img src="../img/Hamburg 2-4.JPG" alt="Hamburg" />
+          <img src="../img/Hamburg 2-5.JPG" alt="Hamburg" />
+          <img src="../img/Hamburg 3-1.jpg" alt="Hamburg" />
+          <img src="../img/Hamburg 3-13.JPG" alt="Hamburg" />
+          <img src="../img/Hmaburg 4-5.jpg" alt="Hamburg" />
+          <img src="../img/Mattighofen 10.JPG" alt="Mattighofen" />
+          <img src="../img/Mittelwald 14.JPG" alt="Mittelwald" />
+          <img src="../img/Nürnberg 16.JPG" alt="Nuerenberg" />
+          <img src="../img/Rom 19.JPG" alt="Rome" />
+          <img src="../img/Rothenburg 6.JPG" alt="Rothenburg ob der Tauber" />
+          <img src="../img/Rom 15.JPG" alt="Rome" />
+          <img src="../img/Rom 24.JPG" alt="Rome" />
+          <img src="../img/Thaalin.JPG" alt="Tallinn" />
+          <img src="../img/Wien 15.JPG" alt="Vienna" />
+          <img src="../img/Österreich 12.JPG" alt="Austria" />
+          <img src="../img/Österreich 16.JPG" alt="Austria" />
+          <img src="../img/Österreich 2-7.jpg" alt="Austria" />
+          <img src="../img/Passau 2.JPG" alt="Passau" />
+        </figure>
+
+        <div
+          class="overlay d-none"
+          id="overlay"
+          onclick="stopPropagationFurthur('overlay')"
+        >
+          <div id="overlay-img">
+            <div class="img-circle">
+              <img src="" alt="" />
+            </div>
+            <span id="img-text"></span>
+            <span id="img-counter"></span>
+            <span id="next"
+              ><svg
+                height="40px"
+                width="40px"
+                version="1.1"
+                id="next-btn"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 512 512"
+                xml:space="preserve"
+                fill="#000000"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    class="right-arrow"
+                    fill="#ffffff"
+                    d="M256,504C119.248,504,8,392.752,8,256S119.248,8,256,8s248,111.248,248,248S392.752,504,256,504z"
+                  ></path>
+                  <path
+                    style="fill: #128589"
+                    d="M256,16c132.336,0,240,107.664,240,240S388.336,496,256,496S16,388.336,16,256S123.664,16,256,16 M256,0C114.608,0,0,114.608,0,256c0,141.376,114.608,256,256,256s256-114.624,256-256C512,114.608,397.392,0,256,0L256,0z"
+                  ></path>
+                  <polygon
+                    fill="#2d2d2d"
+                    points="214.656,95.936 378.016,256 214.656,416.064 165.856,366.096 278.208,256 165.856,145.904 "
+                  ></polygon>
+                </g>
+              </svg>
+            </span>
+
+            <span id="prev"
+              ><svg
+                height="40px"
+                width="40px"
+                version="1.1"
+                id="prev-btn"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 512 512"
+                xml:space="preserve"
+                fill="#000000"
+                transform="rotate(180)"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    class="left-arrow"
+                    fill="#ffffff"
+                    d="M256,504C119.248,504,8,392.752,8,256S119.248,8,256,8s248,111.248,248,248S392.752,504,256,504z"
+                  ></path>
+                  <path
+                    style="fill: #128589"
+                    d="M256,16c132.336,0,240,107.664,240,240S388.336,496,256,496S16,388.336,16,256S123.664,16,256,16 M256,0C114.608,0,0,114.608,0,256c0,141.376,114.608,256,256,256s256-114.624,256-256C512,114.608,397.392,0,256,0L256,0z"
+                  ></path>
+                  <polygon
+                    style="fill: #2d2d2d"
+                    points="214.656,95.936 378.016,256 214.656,416.064 165.856,366.096 278.208,256 165.856,145.904 "
+                  ></polygon>
+                </g>
+              </svg>
+            </span>
+
+            <span id="close-btn" onclick="hideOverlay('close-btn')"
+              ><svg
+                id="close"
+                width="45px"
+                height="45px"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  <path
+                    class="close-button"
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM8.96963 8.96965C9.26252 8.67676 9.73739 8.67676 10.0303 8.96965L12 10.9393L13.9696 8.96967C14.2625 8.67678 14.7374 8.67678 15.0303 8.96967C15.3232 9.26256 15.3232 9.73744 15.0303 10.0303L13.0606 12L15.0303 13.9696C15.3232 14.2625 15.3232 14.7374 15.0303 15.0303C14.7374 15.3232 14.2625 15.3232 13.9696 15.0303L12 13.0607L10.0303 15.0303C9.73742 15.3232 9.26254 15.3232 8.96965 15.0303C8.67676 14.7374 8.67676 14.2625 8.96965 13.9697L10.9393 12L8.96963 10.0303C8.67673 9.73742 8.67673 9.26254 8.96963 8.96965Z"
+                    fill="#128589"
+                  ></path>
+                </g>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </main>
+      <footer id="photo-footer" onclick="hideOverlay('photo-footer')">
+        <div class="profile">
+          <div class="profile-img">
+            <img src="../img/profile-pic.png" alt="Profile-Picture" />
+          </div>
+          <span id="caption">Photography and Design by Niloufar</span>
+        </div>
+        <span id="copyright"
+          >&copy; Copyright 2025 | all rights reserved |
+          <img src="../img/favicon.png" alt="Logo" /> Fotogram</span
+        >
+      </footer>
+    </div>
+
+    <script src="../script/main.js"></script>
+  </body>
+</html>

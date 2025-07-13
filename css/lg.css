@@ -1,0 +1,53 @@
+#header {
+    padding: 10px 120px;
+}
+
+#header .logo {
+    width: 220px;
+    height: auto;
+}
+
+main {
+    padding: 120px 120px 320px;
+}
+
+main h1 {
+    font-size: 34px;
+}
+
+footer {
+    padding: 15px 120px;
+}
+
+.overlay .img-circle {
+    width: 500px;
+    height: 500px;
+}
+
+#overlay-img {
+    width: 500px;
+    height: 500px;
+}
+
+#overlay-img #img-text {
+    left: 80px;
+}
+
+#overlay-img #img-counter {
+    bottom: 25px;
+}
+
+#overlay-img #next {
+    bottom: 20px;
+    right: 80px;
+}
+
+#overlay-img #prev {
+    bottom: 20px;
+    left: 80px;
+}
+
+#overlay-img #close-btn {
+    top: 20px;
+    right: 20px;
+}

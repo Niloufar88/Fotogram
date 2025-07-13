@@ -1,0 +1,8 @@
+@import url(../css/reset.css);
+@import url(../css/colors.css);
+@import url(../css/xxl.css) screen;
+@import url(../css/xl.css) screen and (width<1400px);
+@import url(../css/lg.css) screen and (width<1200px);
+@import url(../css/md.css) screen and (width<992px);
+@import url(../css/sm.css) screen and (width<768px);
+@import url(../css/xs.css) screen and (min-width:320px) and (max-width:576px);
